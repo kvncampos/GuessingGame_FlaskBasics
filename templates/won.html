@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Winner!!!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" media="screen" href="static/css/main.css" />
+<!--<script src="main.js"></script>-->
+</head>
+<body>
+{% if number %}
+    <h1>Winner!</h1>
+    <img src='{{ url_for("static", filename="gifs/winner/{}.gif".format(number)) }}'>
+{% else %}
+    <h1>Winner!</h1>
+{% endif %}
+</body>
+</html>
+
